@@ -4,10 +4,8 @@ from turtle import Turtle
 from turtle import Screen
 
 # Making a spirograph
-tib = t.Turtle()
+tim = t.Turtle()
 t.colormode(255)
-
-
 def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
@@ -15,21 +13,15 @@ def random_color():
     color = (r, g, b)
     return color
 
-
-tib.speed("fastest")
-
+########### Challenge 5 - Spirograph ########
 
 def draw_spirograph(size_of_gap):
     for _ in range(int(360 / size_of_gap)):
-        t.color(random_color())
-        t.circle(100)
-        t.setheading(tib.heading() + size_of_gap)
-
+        tim.color(random_color())
+        tim.circle(100)
+        tim.setheading(tim.heading() + size_of_gap)
 
 draw_spirograph(5)
-
-tib.pensize(9)
-tib.color(random_color())
 
 
 
